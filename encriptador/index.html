@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+
+        <link rel="stylesheet" href="css/normalice.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg" alt="Logo Alura"></a>
+                <h1>Encriptador</h1>
+            </div>
+        </header>
+        
+        <main>
+            <div class="container">
+                <div class="seccion1">
+                    <textarea type="text" id="texto1" placeholder="ingrese el texto aquí"></textarea>
+                    <div class="aclaracion">
+                        <img src="images/vector.svg" alt="exclamation-circle">
+                        <p>Solo letras minúsculas y sin acentos</p>
+
+                        <div class="botones">
+                            <input type="submit" value="Encriptar" id="encriptar">
+                            <input type="submit" value="Desencriptar" id="desencriptar">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="seccion2">
+                    <div class="resultado" id="resultado">
+                        <textarea type="text" id="texto2"></textarea>
+                        <input type="submit" value="Copiar" id="copiar">
+                    </div>
+                    
+                    <div class="no_resultado" id="no_resultado">
+                        <img src="images/muñeco.png" alt="Muñeco" id="img-desencriptador">
+                        
+                        <h3>Ningun mensaje fue encontrado</h3>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+                    
+        <footer>
+            <!-- <img src="images/logo-blanco.png"  alt="Logo Ana"> -->
+            <p class="copyright">&copy Ana Kloss - 2023</p>
+        </footer>
+    </body>
+
+    <script src="js/script.js" charset="utf-8"></script>
+</html>
